@@ -1,0 +1,55 @@
+2ª Aula — Sequência de Cenas
+Como começa?
+
+Piko está na Vila de Arkan quando recebe a missão de recuperar a Pedra de Arkan, roubada por Varyn.
+
+Piko pega sua espada e começa sua aventura.
+
+As 10 cenas
+Vila de Arkan — Piko recebe a missão.
+Saída da Vila — Piko começa sua viagem.
+Floresta — Piko entra em uma floresta.
+Goblin — Piko enfrenta um goblin. 🎲
+Estrada Antiga — Piko continua sua jornada.
+Ponte Quebrada — Piko tenta atravessar a ponte. 🎲
+Caverna — Piko atravessa uma pequena caverna.
+Entrada do Castelo — Piko chega ao castelo de Varyn.
+Varyn — Piko enfrenta Varyn.
+Final — Piko recupera a Pedra de Arkan.
+Caminhos
+
+Na Floresta, Piko pode escolher:
+
+Caminho 1:
+
+Floresta → Goblin → Estrada → Ponte → Castelo
+
+Caminho 2:
+
+Floresta → Caverna → Estrada → Ponte → Castelo
+
+Os dois caminhos levam até Varyn.
+
+Desafio 1 — Goblin 🎲
+
+Piko luta contra um goblin.
+
+O dado vai de 1 a 6:
+
+1, 2 ou 3: Piko perde vida.
+4, 5 ou 6: Piko derrota o goblin.
+Desafio 2 — Ponte 🎲
+
+Piko precisa atravessar uma ponte quebrada.
+
+O dado vai de 1 a 6:
+
+1, 2 ou 3: Piko falha e precisa tentar novamente.
+4, 5 ou 6: Piko atravessa a ponte.
+Final
+
+Piko chega ao castelo e enfrenta Varyn.
+
+Se vencer, ele recupera a Pedra de Arkan e completa sua missão.
+
+Vila → Saída → Floresta → Caminho escolhido → Estrada → Ponte → Castelo → Varyn → Final
