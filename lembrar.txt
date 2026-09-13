@@ -1,0 +1,14 @@
+melhorar a interface geral e adicionar mapa funcional do lado e nao deixar
+as caixas de texto feia quadradao indicando caminho
+
+deixar campo de batalha igual a pokemon, as imagens tao no pedrive nao no pc
+nao esquece o pendrive para nao se perder no que basear burro
+
+tirar os spritesheet pq ta bugando e fazer as imagens em png transparente
+
+trocar o sprite da mae do piko
+
+tirar  montro aleatorio na mae do piko
+
+trocar todos sprites
+
