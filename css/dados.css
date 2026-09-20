@@ -1,0 +1,43 @@
+
+
+
+
+
+.resultado-dado {
+    border: 3px solid var(--borda);
+    padding: 14px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #eadfbe;
+}
+
+.resultado-dado.sucesso {
+    background: #dcebd4;
+}
+
+.resultado-dado.falha {
+    background: #f0d1ca;
+}
+
+.resultado-dado p {
+    margin: 5px 0 0;
+}
+
+.dado-visual {
+    width: 66px;
+    height: 66px;
+    flex: 0 0 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--borda);
+    border-radius: 10px;
+    background: #fff5d8;
+    font-size: 34px;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.22);
+}
+
+

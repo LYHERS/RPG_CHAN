@@ -1,0 +1,186 @@
+
+
+.tela-jokenpo {
+    border: 4px solid var(--borda);
+    background:
+        linear-gradient(rgba(50, 31, 17, 0.20), rgba(50, 31, 17, 0.20)),
+        linear-gradient(to bottom, #736548 0 52%, #62553a 52% 70%, #4c3825 70% 100%);
+    min-height: 590px;
+    padding: 24px;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.28);
+}
+
+.jokenpo-cabecalho {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 22px;
+    background: #f5edd9;
+    border: 3px solid var(--borda);
+    padding: 14px 18px;
+}
+
+.jokenpo-cabecalho h3 {
+    margin: 7px 0;
+}
+
+.jokenpo-cabecalho p:last-child {
+    margin-bottom: 0;
+}
+
+.jokenpo-campo {
+    display: grid;
+    grid-template-columns: 1fr 90px 1fr;
+    gap: 18px;
+    align-items: center;
+    max-width: 760px;
+    margin: 0 auto 18px;
+}
+
+.jokenpo-lutador {
+    min-height: 215px;
+    border: 3px solid var(--borda);
+    background: rgba(247, 241, 223, 0.86);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.peca-jokenpo {
+    width: 170px;
+    height: 145px;
+    border: 4px solid #6b4928;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: linear-gradient(#efe0bb, #cdb47a);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.20);
+}
+
+.peca-jokenpo img {
+    width: 145px;
+    height: 125px;
+    object-fit: contain;
+}
+
+
+.jokenpo-versus {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pontuacao-jokenpo {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--borda);
+    background: var(--verde-claro);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.jokenpo-escolhas-anteriores {
+    max-width: 760px;
+    margin: 0 auto 14px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    border: 2px solid var(--borda);
+    background: #e5dcc5;
+    padding: 10px;
+}
+
+.caixa-jokenpo-mensagem {
+    max-width: 760px;
+    min-height: 92px;
+    margin: 0 auto 16px;
+    border: 3px solid var(--borda);
+    background: #f5edd9;
+    padding: 14px 18px;
+}
+
+.caixa-jokenpo-mensagem p {
+    margin: 0 0 5px;
+}
+
+.menu-jokenpo {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.opcoes-jokenpo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.acao-jokenpo {
+    border: 4px solid var(--borda);
+    background: #f5e8c6;
+    color: var(--texto);
+    padding: 14px 12px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.acao-jokenpo:hover {
+    background: var(--verde-claro);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.25);
+}
+
+.acao-jokenpo.tentar {
+    width: 100%;
+    background: #d88d81;
+}
+
+.simbolo-jokenpo {
+    font-size: 34px;
+    line-height: 1;
+}
+
+@media (max-width: 720px) {
+    .jokenpo-campo {
+        grid-template-columns: 1fr;
+    }
+
+    .jokenpo-versus {
+        font-size: 22px;
+    }
+
+    .opcoes-jokenpo {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.tentativas-desafio {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border: 2px solid var(--borda);
+    background: #fff3c8;
+}
+
+.acao-combate.item {
+    background: #d9f0d2;
+}
+
+.acao-combate.item:hover:not(:disabled) {
+    background: #bfe2b5;
+}
+

@@ -1,0 +1,175 @@
+
+
+.topo {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 28px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #f7f1df;
+}
+
+.topo h1 {
+    margin: 3px 0 0;
+    font-size: clamp(24px, 3vw, 42px);
+    letter-spacing: 1px;
+}
+
+.subtitulo,
+.etiqueta {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.72;
+}
+
+
+.acoes-topo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+
+.placar-geral {
+    min-width: 112px;
+    border: 3px double #d7b86b;
+    background: #352317;
+    color: #f7f1df;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.28);
+}
+
+.placar-geral span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.placar-geral strong {
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 3px;
+}
+
+
+
+.nota-pontos {
+    border-left: 4px solid var(--amarelo);
+    background: #e1c994;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.placar-final {
+    display: inline-block;
+    margin: 14px 0 18px;
+    border: 3px solid var(--borda);
+    background: #ddc17d;
+    padding: 12px 16px;
+    font-size: 18px;
+}
+
+.placar-final strong {
+    font-size: 28px;
+}
+
+
+
+.layout-principal {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 14px 28px 36px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.75fr);
+    gap: 24px;
+    align-items: start;
+}
+
+
+
+.painel-jogo,
+.painel-mapa {
+    background: var(--painel);
+    border: 4px solid var(--borda);
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.35);
+}
+
+
+.painel-jogo {
+    padding: 22px;
+    min-height: 680px;
+}
+
+
+
+.cabecalho-cena {
+    border-bottom: 3px double var(--borda);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.cabecalho-cena h2,
+.titulo-mapa h2 {
+    margin: 6px 0 8px;
+}
+
+.cabecalho-cena p {
+    margin-bottom: 0;
+    line-height: 1.55;
+}
+
+.numero-cena {
+    display: inline-block;
+    padding: 5px 9px;
+    border: 2px solid var(--borda);
+    background: var(--painel-escuro);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.botao,
+.acao-combate {
+    border: 3px solid var(--borda);
+    background: #f5e8c6;
+    color: var(--texto);
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.22);
+}
+
+.botao:hover,
+.acao-combate:hover {
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.25);
+}
+
+.botao.primario,
+.acao-combate.atacar {
+    background: var(--verde-claro);
+}
+
+.botao.secundario {
+    background: #d8cfb7;
+}
+
+.botao.perigo {
+    background: #d88d81;
+}
+

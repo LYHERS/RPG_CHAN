@@ -1,0 +1,54 @@
+
+
+.duelo-dados {
+    align-items: start;
+}
+
+.duelo-dados-conteudo {
+    width: 100%;
+}
+
+.placar-dados {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 14px;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.placar-dados > div {
+    border: 3px solid var(--borda);
+    background: #f5e8c6;
+    padding: 14px;
+    display: grid;
+    gap: 6px;
+    text-align: center;
+}
+
+.placar-dados > div > span {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.placar-dados > b {
+    font-size: 26px;
+}
+
+.resultado-dados {
+    border: 3px solid var(--borda);
+    background: #dcebd4;
+    padding: 12px;
+    margin: 12px 0 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .placar-dados {
+        grid-template-columns: 1fr;
+    }
+
+    .placar-dados > b {
+        text-align: center;
+    }
+}
+

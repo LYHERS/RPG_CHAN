@@ -1,0 +1,44 @@
+
+.topo h1, .inicio-conteudo h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #e0c079;
+    text-shadow: 2px 2px 0 #22140b;
+}
+
+.painel-jogo, .painel-mapa, .inicio-conteudo, .tela-inicio, .tela-derrota-jogo {
+    border-color: #6b4928;
+}
+
+.painel-jogo, .painel-mapa, .cartao, .status, .caixa-mensagem, .jokenpo-cabecalho, .caixa-jokenpo-mensagem {
+    box-shadow: 6px 6px 0 rgba(35, 20, 10, 0.25);
+}
+
+.cabecalho-cena {
+    border-bottom-color: #8a6938;
+}
+
+.botao, .acao-combate, .acao-jokenpo, .botao-iniciar {
+    border-color: #5a3c22;
+    letter-spacing: 0.5px;
+}
+
+.botao:hover, .acao-combate:hover, .acao-jokenpo:hover, .botao-iniciar:hover {
+    filter: brightness(1.04);
+}
+
+.mapa-area {
+    background:
+        radial-gradient(circle at 20% 25%, #6f734b 0 8%, transparent 8.5%),
+        radial-gradient(circle at 80% 37%, #5d633e 0 10%, transparent 10.5%),
+        radial-gradient(circle at 25% 72%, #626746 0 9%, transparent 9.5%),
+        linear-gradient(135deg, #7b8056, #515438);
+}
+
+.mapa-linhas line {
+    stroke: #b99452;
+}
+
+.mapa-no {
+    border-color: #5a3c22;
+    background: #dbc07e;
+}

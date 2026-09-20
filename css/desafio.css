@@ -1,0 +1,73 @@
+
+
+.cartao {
+    border: 3px solid var(--borda);
+    background: #fff5d8;
+    padding: 20px;
+    margin-top: 18px;
+}
+
+.cartao.desafio {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 18px;
+    align-items: center;
+}
+
+.icone-grande {
+    font-size: 56px;
+    text-align: center;
+}
+
+
+
+.aviso {
+    border: 3px solid var(--borda);
+    padding: 12px 14px;
+    margin: 14px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #eadfbe;
+}
+
+.aviso.sucesso {
+    background: #dcebd4;
+}
+
+.aviso.falha {
+    background: #f0d1ca;
+}
+
+
+
+.lista-escolhas {
+    display: grid;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.opcao-caminho {
+    border: 2px solid var(--borda);
+    background: #f9f3e2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.opcao-caminho:hover {
+    background: #e8e1cb;
+}
+
+.opcao-caminho span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.final-jogo {
+    text-align: center;
+}
+

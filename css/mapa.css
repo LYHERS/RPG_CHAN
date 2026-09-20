@@ -1,0 +1,203 @@
+
+
+.painel-mapa {
+    padding: 16px;
+    position: sticky;
+    top: 14px;
+}
+
+.titulo-mapa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.legenda-atual {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+
+.mapa-area {
+    position: relative;
+    height: 760px;
+    overflow: hidden;
+    border: 3px solid var(--borda);
+    background:
+        radial-gradient(circle at 20% 25%, #789c62 0 8%, transparent 8.5%),
+        radial-gradient(circle at 80% 37%, #668c5e 0 10%, transparent 10.5%),
+        radial-gradient(circle at 25% 72%, #6c915f 0 9%, transparent 9.5%),
+        linear-gradient(135deg, #97b276, #708e62);
+}
+
+.mapa-area::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(45deg, transparent 0 16px, rgba(255,255,255,0.025) 16px 18px);
+}
+
+.mapa-linhas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.mapa-linhas line {
+    stroke: #c7b17c;
+    stroke-width: 24;
+    stroke-linecap: round;
+    filter: drop-shadow(0 3px 0 rgba(0,0,0,0.18));
+}
+
+
+
+.mapa-no {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    min-width: 86px;
+    max-width: 120px;
+    min-height: 48px;
+    padding: 8px 10px;
+    border: 3px solid #36442f;
+    background: #ece1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.25);
+}
+
+.mapa-no.batalha {
+    background: #d98b72;
+}
+
+.mapa-no.boss {
+    background: #8e5b72;
+    color: white;
+}
+
+.mapa-no.final {
+    background: #e1c864;
+}
+
+.mapa-no.atual {
+    outline: 5px solid #fff7b5;
+    box-shadow: 0 0 0 8px rgba(35, 63, 32, 0.75), 5px 5px 0 rgba(0,0,0,0.28);
+}
+
+.nota-mapa {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+
+
+.mensagem-js {
+    position: fixed;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    z-index: 50;
+    background: #f5e8c6;
+    border: 3px solid var(--borda);
+    padding: 12px 18px;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.escondido {
+    display: none !important;
+}
+
+@media (max-width: 1050px) {
+    .layout-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-mapa {
+        position: static;
+    }
+
+    .mapa-area {
+        height: 650px;
+    }
+}
+
+@media (max-width: 720px) {
+    .topo,
+    .layout-principal {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .topo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .acoes-topo {
+        justify-content: flex-start;
+    }
+
+    .painel-jogo {
+        padding: 14px;
+    }
+
+    .tela-combate {
+        min-height: 720px;
+    }
+
+    .status {
+        width: calc(100% - 36px);
+    }
+
+    .status-inimigo {
+        left: 18px;
+        top: 18px;
+    }
+
+    .peca-inimigo {
+        right: 30px;
+        top: 160px;
+    }
+
+    .peca-piko {
+        left: 30px;
+        bottom: 300px;
+    }
+
+    .status-piko {
+        right: 18px;
+        bottom: 170px;
+    }
+
+    .caixa-mensagem,
+    .menu-combate {
+        width: 100%;
+    }
+
+    .caixa-mensagem {
+        bottom: 120px;
+        border-right: 0;
+    }
+
+    .menu-combate {
+        min-height: 120px;
+    }
+
+    .cartao.desafio {
+        grid-template-columns: 1fr;
+    }
+}
+

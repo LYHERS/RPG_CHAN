@@ -1,0 +1,38 @@
+
+
+.pagina-derrota {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2a2020;
+    padding: 24px;
+}
+
+.tela-derrota-jogo {
+    width: 100%;
+    max-width: 760px;
+}
+
+.derrota-conteudo {
+    border: 6px solid #1b1717;
+    background: #efe3cd;
+    padding: 36px;
+    text-align: center;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.35);
+}
+
+.derrota-conteudo h1 {
+    margin-top: 8px;
+    font-size: 40px;
+}
+
+.derrota-aviso {
+    margin: 22px 0;
+    padding: 12px;
+    border: 2px solid #6a4a43;
+    background: #f7d2c8;
+}
+
+
