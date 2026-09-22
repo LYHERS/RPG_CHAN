@@ -1,4 +1,5 @@
 <?php
+
 function salvarPontuacaoRanking($nome, $pontuacao)
 {
     if (isset($_SESSION["rankingSalvo"]) && $_SESSION["rankingSalvo"] === true) {
@@ -6,6 +7,7 @@ function salvarPontuacaoRanking($nome, $pontuacao)
     }
 
     $nome = trim($nome);
+
     if ($nome === "") {
         return false;
     }
@@ -23,7 +25,9 @@ function salvarPontuacaoRanking($nome, $pontuacao)
     }
 
     $pontuacao = (int) $pontuacao;
+
     $sql = "INSERT INTO ranking (nome, pontuacao) VALUES (?, ?)";
+
     $stmt = $conexaoBanco->prepare($sql);
 
     if (!$stmt) {
@@ -32,7 +36,9 @@ function salvarPontuacaoRanking($nome, $pontuacao)
     }
 
     $stmt->bind_param("si", $nome, $pontuacao);
+
     $ok = $stmt->execute();
+
     $stmt->close();
     $conexaoBanco->close();
 
@@ -43,6 +49,7 @@ function salvarPontuacaoRanking($nome, $pontuacao)
     return $ok;
 }
 
+
 function obterRanking($limite = 20)
 {
     include __DIR__ . "/../Config/banco.php";
@@ -52,16 +59,26 @@ function obterRanking($limite = 20)
     }
 
     $limite = max(1, min(100, (int) $limite));
-    $resultado = $conexaoBanco->query("SELECT id, nome, pontuacao FROM ranking ORDER BY pontuacao DESC, id ASC LIMIT " . $limite);
+
+    $sql = "SELECT id, nome, pontuacao
+            FROM ranking
+            ORDER BY pontuacao DESC, id ASC
+            LIMIT " . $limite;
+
+    $resultado = $conexaoBanco->query($sql);
+
     $ranking = array();
 
     if ($resultado) {
+
         while ($linha = $resultado->fetch_assoc()) {
             $ranking[] = $linha;
         }
+
         $resultado->free();
     }
 
     $conexaoBanco->close();
+
     return $ranking;
 }

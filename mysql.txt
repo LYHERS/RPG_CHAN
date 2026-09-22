@@ -1,0 +1,25 @@
+primeiro:
+
+CREATE DATABASE IF NOT EXISTS aw2
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE aw2;
+
+CREATE TABLE IF NOT EXISTS ranking (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(45) NOT NULL,
+    pontuacao INT NOT NULL DEFAULT 0,
+    PRIMARY KEY (id)
+);
+
+e clicqueno ⚡
+
+segundo:
+
+USE aw2;
+
+SELECT * FROM ranking
+ORDER BY pontuacao DESC, id ASC;
+
+e clicqueno ⚡
